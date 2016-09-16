@@ -1,9 +1,9 @@
-![Yii2, Phundament, helptext, Less and Gulp ](hero.png)
+![Yii2, Phundament, open-ecommerce, Less and Gulp ](hero.png)
 
 #Project Based in Yii2 and Phundament4 with Gulp as assets generation tool
 
-helptext
-This project is intended as a live, working pilot for a platform to empower existing non-profit helplines by providing access and management of mobile text and other emerging ways of communication. The platform will allow integration with their existing systems as well as upgrade, to enable them to keep-up and transfer their standards, knowledge and skills with ease.
+Boilerplate
+Start up app with different modules and based in Phundament4.
 
 
 
@@ -11,7 +11,7 @@ This project is intended as a live, working pilot for a platform to empower exis
 - Simplify configuration file by [Phundamental 4](https://github.com/phundament/app)
 - Dashboard theme based in [AdminLTE 2](http://almsaeedstudio.com/AdminLTE) for backend with extra plugins for chars.
 - User Managment with RDAC to use roles and permisions.
-- Migrations support with [yii2-migration-utility by Jon Chambers] (https://github.com/c006/yii2-migration-utility) 
+- Migrations support with [yii2-migration-utility by Jon Chambers] (https://github.com/c006/yii2-migration-utility)
 - Gulp configuration based in [Jacob Moen zurbified] (https://github.com/jacmoe/yii2-app-basic-zurbified) but with out foundation :)
 - Multi Phone Calls and SMS providers integration (ie. Twilio)
 
@@ -89,7 +89,7 @@ etc/apache2/sites-available configuration
 </VirtualHost>
 ```
 
-## you will have this 
+## you will have this
 ln -s ../local/.env .env
 
 
@@ -137,9 +137,3 @@ You don't need them to yii2 run or even create the assets folder, but you want b
 
 ###Some other documentation
 - [Create new migrations](docs/migrations.md)
-
-
-
-
-
-

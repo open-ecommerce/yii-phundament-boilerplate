@@ -178,6 +178,9 @@ $common = [
         'utility' => [
             'class' => 'c006\utility\migration\Module',
         ],
+        'comment' => [
+            'class' => 'yii2mod\comments\Module'
+        ],
     ],
     'params' => [
         'adminEmail' => getenv('APP_ADMIN_EMAIL'),
@@ -252,6 +255,7 @@ $console = [
         'db' => 'dmstr\console\controllers\MysqlController',
         'migrate' => 'dmstr\console\controllers\MigrateController',
         'translate' => '\lajax\translatemanager\commands\TranslatemanagerController',
+        'comments' => 'yii2mod\comments\controllers\ManageController',
     ],
     'components' => [
     ],
@@ -307,6 +311,17 @@ if (YII_ENV_DEV || YII_ENV_TEST) {
                     // template name => path to template
                     'oemodel' =>
                     '@app/oetemplates/model/default',
+                ]
+            ],
+            // generator name
+            'giiant-crud' => [
+                //generator class
+                'class' => 'schmunk42\giiant\generators\crud\Generator',
+                //setting for out templates
+                'templates' => [
+                    // template name => path to template
+                    'oecrud' =>
+                    '@app/oetemplates/crud/default',
                 ]
             ]
         ],

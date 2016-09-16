@@ -15,7 +15,7 @@ $nameAttribute = $generator->getNameAttribute();
 $model = new $generator->modelClass();
 $model->setScenario('crud');
 
-$modelName = Inflector::pluralize(StringHelper::basename($model::className()));
+$modelName = Inflector::camel2words(Inflector::pluralize(StringHelper::basename($model::className())));
 
 $safeAttributes = $model->safeAttributes();
 if (empty($safeAttributes)) {
@@ -32,7 +32,7 @@ echo "<?php\n";
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use <?= $generator->indexWidgetType === 'grid' ? 'yii\\grid\\GridView' : 'yii\\widgets\\ListView' ?>;
+use <?= $generator->indexWidgetType === 'grid' ? 'kartik\\grid\\GridView' : 'yii\\widgets\\ListView' ?>;
 
 /**
 * @var yii\web\View $this
@@ -43,7 +43,7 @@ use <?= $generator->indexWidgetType === 'grid' ? 'yii\\grid\\GridView' : 'yii\\w
 */
 
 <?php
-$this->title = Yii::t($generator->messageCategory, $modelName);
+$this->title = Yii::t($generator->modelMessageCategory, $modelName);
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -56,15 +56,15 @@ if($generator->accessFilter):
 */
 $actionColumnTemplates = [];
 
-if (\Yii::$app->user->can('<?=$permisions['view']['name']?>')) { 
+if (\Yii::$app->user->can('<?=$permisions['view']['name']?>', ['route' => true])) {
     $actionColumnTemplates[] = '{view}';
 }
 
-if (\Yii::$app->user->can('<?=$permisions['update']['name']?>')) {
+if (\Yii::$app->user->can('<?=$permisions['update']['name']?>', ['route' => true])) {
     $actionColumnTemplates[] = '{update}';
 }
 
-if (\Yii::$app->user->can('<?=$permisions['delete']['name']?>')) {
+if (\Yii::$app->user->can('<?=$permisions['delete']['name']?>', ['route' => true])) {
     $actionColumnTemplates[] = '{delete}';
 }
 <?php
@@ -81,7 +81,9 @@ Yii::$app->view->params['pageButtons'] = Html::a('<span class="glyphicon glyphic
 echo '?>';
 ?>
 
-<div class="giiant-crud <?= Inflector::camel2id(StringHelper::basename($generator->modelClass), '-', true) ?>-index">
+<div class="col-md-10 col-md-offset-1">
+
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass), '-', true) ?>-index">
 
     <?=
     '<?php '.($generator->indexWidgetType === 'grid' ? '// ' : '') ?>
@@ -94,18 +96,12 @@ echo '?>';
 
     <?= "<?php \yii\widgets\Pjax::begin(['id'=>'pjax-main', 'enableReplaceState'=> false, 'linkSelector'=>'#pjax-main ul.pagination a, th a', 'clientOptions' => ['pjax:success'=>'function(){alert(\"yo\")}']]) ?>\n"; ?>
 
-    <h1>
-        <?= "<?= Yii::t('{$generator->messageCategory}', '{$modelName}') ?>" ?>
-        <small>
-            List
-        </small>
-    </h1>
     <div class="clearfix crud-navigation">
 <?php
 if($generator->accessFilter){ 
 	echo "<?php\n"
 ?>
-if(\Yii::$app->user->can('<?=$permisions['create']['name']?>')){
+if(\Yii::$app->user->can('<?=$permisions['create']['name']?>', ['route' => true])){
 <?php
 echo "?>\n"
 ?>
@@ -150,7 +146,7 @@ echo "?>\n"
                 $items .= <<<PHP
             [
                 'url' => ['{$route}'],
-                'label' => '<i class="glyphicon glyphicon-arrow-right">&nbsp;' . {$generator->generateString($label)} . '</i>',
+                'label' => '<i class="glyphicon glyphicon-arrow-right">&nbsp;' . Yii::t('$generator->modelMessageCategory', '$label') . '</i>',
             ],
 PHP;
                 ?>
@@ -182,23 +178,23 @@ PHP;
 
     <hr />
 
-    <div class="table-responsive">
-        <?= '<?= ' ?>GridView::widget([
-        'layout' => '{summary}{pager}{items}{pager}',
-        'dataProvider' => $dataProvider,
-        'pager' => [
-        'class' => yii\widgets\LinkPager::className(),
-        'firstPageLabel' => <?= $generator->generateString('First') ?>,
-        'lastPageLabel' => <?= $generator->generateString('Last') ?>
-        ],
-        <?php if ($generator->searchModelClass !== ''): ?>
-            'filterModel' => $searchModel,
-        <?php endif; ?>
-        'tableOptions' => ['class' => 'table table-striped table-bordered table-hover'],
-        'headerRowOptions' => ['class'=>'x'],
-        'columns' => [
-
-        <?php
+    <?php
+        $count = 0;
+        $gridColumns = '';
+        foreach ($safeAttributes as $attribute) {
+            $format = trim($generator->columnFormat($attribute, $model));
+            if ($format == false) {
+                continue;
+            }
+            if (++$count < $generator->gridMaxColumns) {
+                $gridColumns .= "\t\t\t" . str_replace("\n", "\n\t\t\t", $format) . ",\n";
+            } else {
+                $gridColumns .= "\t\t\t/*" . str_replace("\n", "\n\t\t\t", $format) . ",*/\n";
+            }
+        }
+    ?>
+    
+            <?php
         $actionButtonColumn = <<<PHP
         [
             'class' => '{$generator->actionButtonClass}',
@@ -214,30 +210,47 @@ PHP;
 PHP;
 
         // action buttons first
-        echo $actionButtonColumn;
-
-        $count = 0;
-        echo "\n"; // code-formatting
-
-        foreach ($safeAttributes as $attribute) {
-            $format = trim($generator->columnFormat($attribute, $model));
-            if ($format == false) {
-                continue;
-            }
-            if (++$count < $generator->gridMaxColumns) {
-                echo "\t\t\t" . str_replace("\n", "\n\t\t\t", $format) . ",\n";
-            } else {
-                echo "\t\t\t/*" . str_replace("\n", "\n\t\t\t", $format) . ",*/\n";
-            }
-        }
-
+        $gridColumns .=  $actionButtonColumn;
+        
         ?>
-        ],
+    
+    
+    
+        <?= '<?= ' ?>GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'resizableColumns' => true,
+                'showPageSummary' => false,
+                'headerRowOptions' => ['class' => 'kartik-sheet-style'],
+                'filterRowOptions' => ['class' => 'kartik-sheet-style'],
+                'responsive' => true,
+                'pjax' => true, 
+                'pjaxSettings' => [
+                    'neverTimeout' => true,
+                ],
+                'hover' => true,
+                'panel' => [
+                    'heading' => '<h3 class="panel-title"><i class="glyphicon glyphicon-user"></i> ' . $this->title . '</h3>',
+                    'type' => 'primary',
+                    'showFooter' => false
+                ],
+                'columns' => [ <?= $gridColumns ?> ],
+                // set export properties
+                'export' => [
+                    'fontAwesome' => true
+                ],
+                // set your toolbar
+                'toolbar' => [
+                    ['content' =>
+                        Html::a('<i class="glyphicon glyphicon-plus"></i>  Create new ', ['create'], ['class' => 'btn btn-success']),
+                    ],
+                    '{export}',
+                ],
         ]); ?>
-    </div>
 
 </div>
 
+</div>    
 
 <?= "<?php \yii\widgets\Pjax::end() ?>\n"; ?>
 

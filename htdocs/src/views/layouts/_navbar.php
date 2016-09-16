@@ -43,7 +43,7 @@ if (\Yii::$app->hasModule('user')) {
 
 NavBar::begin(
         [
-            'brandLabel' => getenv('APP_TITLE')." (".getenv('TWILIO_NUMBER').") ",
+            'brandLabel' => getenv('APP_TITLE'),
             'brandUrl' => \Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar navbar-inverse navbar-fixed-top',
@@ -52,9 +52,8 @@ NavBar::begin(
 );
 
 $menuBeforeItems = [
-    ['label' => 'Clients', 'url' => ['/contact']],
-    ['label' => 'Cases', 'url' => ['/cases']],
-    ['label' => 'Helpers', 'url' => ['/profile']],
+    ['label' => 'Filmes', 'url' => ['/sakila-film']],
+    ['label' => 'Actors', 'url' => ['/sakila-actor']],
 //    ['label' => 'Reports',
 //        'items' => [
 //            ['label' => 'Cases', 'url' => ['#']],

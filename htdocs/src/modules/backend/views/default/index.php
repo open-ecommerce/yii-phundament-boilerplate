@@ -104,16 +104,16 @@ use app\models\Message;
 <div class="row">
 
     <?php
-        $messages = new message;
-    
-        $messagesByMonth = $messages->messagesByMonth;
-
-        foreach ($messagesByMonth as $item) {
-            $monthValues[] = $item['month'];
-            $monthTotals[] = $item['total'];
-        }
+        // $messages = new message;
+        //
+        // $messagesByMonth = $messages->messagesByMonth;
+        //
+        // foreach ($messagesByMonth as $item) {
+        //     $monthValues[] = $item['month'];
+        //     $monthTotals[] = $item['total'];
+        // }
     ?>
-                
+
       <?= ChartJs::widget([
           'type' => 'line',
           'options' => [
@@ -172,4 +172,3 @@ use app\models\Message;
 
 
 </div>
-

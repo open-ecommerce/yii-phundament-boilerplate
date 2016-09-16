@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "336cda1569ce840c9274f7a280a98213",
-    "content-hash": "a51b0f8d33e8ab365ef27434c7c6caa7",
+    "hash": "bc91493c8967737061ea92c982427f6f",
+    "content-hash": "27d4caa08fb75c312e30de48d2453c50",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -127,17 +127,60 @@
             "time": "2015-04-30 12:22:25"
         },
         {
-            "name": "almasaeed2010/adminlte",
-            "version": "v2.3.5",
+            "name": "2amigos/yii2-translateable-behavior",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "0ab2eb7f382e79810ebf3032ce766a02af2b0f3b"
+                "url": "https://github.com/2amigos/yii2-translateable-behavior.git",
+                "reference": "c79ab7cf9d77cf107ce060323a0b1fb1ec01c505"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/0ab2eb7f382e79810ebf3032ce766a02af2b0f3b",
-                "reference": "0ab2eb7f382e79810ebf3032ce766a02af2b0f3b",
+                "url": "https://api.github.com/repos/2amigos/yii2-translateable-behavior/zipball/c79ab7cf9d77cf107ce060323a0b1fb1ec01c505",
+                "reference": "c79ab7cf9d77cf107ce060323a0b1fb1ec01c505",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\translateable\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "ramirez.cobos@gmail.com",
+                    "homepage": "http://2amigos.us"
+                }
+            ],
+            "description": "ActiveRecord attributes translations for Yii2.",
+            "keywords": [
+                "Behavior",
+                "extension",
+                "translation",
+                "yii"
+            ],
+            "time": "2014-08-22 09:10:21"
+        },
+        {
+            "name": "almasaeed2010/adminlte",
+            "version": "v2.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/almasaeed2010/AdminLTE.git",
+                "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/be11566d9539370b196ac85f22a6baf9f42c87cb",
+                "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb",
                 "shasum": ""
             },
             "type": "library",
@@ -148,7 +191,7 @@
             "authors": [
                 {
                     "name": "Abdullah Almsaeed",
-                    "email": "support@almsaeedstudio.com"
+                    "email": "abdullah@almsaeedstudio.com"
                 }
             ],
             "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 3",
@@ -164,7 +207,58 @@
                 "theme",
                 "web"
             ],
-            "time": "2016-07-03 15:21:22"
+            "time": "2016-08-04 23:22:06"
+        },
+        {
+            "name": "asofter/yii2-imperavi-redactor",
+            "version": "0.0.3",
+            "target-dir": "yii/imperavi",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asofter/yii2-imperavi-redactor.git",
+                "reference": "08e05dd323f7b8f247a68324a5767eb14ffb7a1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asofter/yii2-imperavi-redactor/zipball/08e05dd323f7b8f247a68324a5767eb14ffb7a1f",
+                "reference": "08e05dd323f7b8f247a68324a5767eb14ffb7a1f",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-0": {
+                    "yii\\imperavi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Yaremchuk",
+                    "email": "alwex10@gmail.com"
+                },
+                {
+                    "name": "Veaceslav Medvedev",
+                    "email": "slavcopost@gmail.com"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/"
+                }
+            ],
+            "description": "Imperavi Redactor WYSIWYG widget (OEM-licensed for Yii 2)",
+            "keywords": [
+                "imperavi",
+                "imperavi redactor",
+                "yii"
+            ],
+            "time": "2016-01-12 16:21:51"
         },
         {
             "name": "beowulfenator/yii2-json-editor",
@@ -280,16 +374,16 @@
         },
         {
             "name": "bower-asset/admin-lte",
-            "version": "v2.3.5",
+            "version": "v2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "0ab2eb7f382e79810ebf3032ce766a02af2b0f3b"
+                "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/0ab2eb7f382e79810ebf3032ce766a02af2b0f3b",
-                "reference": "0ab2eb7f382e79810ebf3032ce766a02af2b0f3b",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/be11566d9539370b196ac85f22a6baf9f42c87cb",
+                "reference": "be11566d9539370b196ac85f22a6baf9f42c87cb",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -419,16 +513,16 @@
         },
         {
             "name": "bower-asset/bootstrap3-dialog",
-            "version": "v1.35.2",
+            "version": "v1.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nakupanda/bootstrap3-dialog.git",
-                "reference": "49b786d4949bb02a22a9358d7d65f30e058c5438"
+                "reference": "4aa9d536516957e01c39afd1b5e8bdd88976ef7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nakupanda/bootstrap3-dialog/zipball/49b786d4949bb02a22a9358d7d65f30e058c5438",
-                "reference": "49b786d4949bb02a22a9358d7d65f30e058c5438",
+                "url": "https://api.github.com/repos/nakupanda/bootstrap3-dialog/zipball/4aa9d536516957e01c39afd1b5e8bdd88976ef7b",
+                "reference": "4aa9d536516957e01c39afd1b5e8bdd88976ef7b",
                 "shasum": ""
             },
             "require": {
@@ -455,6 +549,9 @@
                     "README.md"
                 ]
             },
+            "license": [
+                "MIT"
+            ],
             "description": "Make use of Bootstrap Modal more monkey-friendly. http://nakupanda.github.io/bootstrap3-dialog/",
             "keywords": [
                 "css",
@@ -534,16 +631,16 @@
         },
         {
             "name": "bower-asset/intl-tel-input",
-            "version": "v9.0.5",
+            "version": "v9.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackocnr/intl-tel-input.git",
-                "reference": "0ecfa12aa608f5c639d45296eb9aec2b2ae7e37b"
+                "reference": "bebdaadb083c7410ed7917b9f523966afde8499e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackocnr/intl-tel-input/zipball/0ecfa12aa608f5c639d45296eb9aec2b2ae7e37b",
-                "reference": "0ecfa12aa608f5c639d45296eb9aec2b2ae7e37b",
+                "url": "https://api.github.com/repos/jackocnr/intl-tel-input/zipball/bebdaadb083c7410ed7917b9f523966afde8499e",
+                "reference": "bebdaadb083c7410ed7917b9f523966afde8499e",
                 "shasum": ""
             },
             "require": {
@@ -693,16 +790,16 @@
         },
         {
             "name": "bower-asset/json-editor",
-            "version": "v0.7.27",
+            "version": "v0.7.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/json-editor.git",
-                "reference": "6664b1ffa336a5b6601217f97c3ed266f198abe5"
+                "reference": "26e221593e3678794d4abf6c0ba98ccb180c7387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/json-editor/zipball/6664b1ffa336a5b6601217f97c3ed266f198abe5",
-                "reference": "6664b1ffa336a5b6601217f97c3ed266f198abe5",
+                "url": "https://api.github.com/repos/jdorn/json-editor/zipball/26e221593e3678794d4abf6c0ba98ccb180c7387",
+                "reference": "26e221593e3678794d4abf6c0ba98ccb180c7387",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -912,22 +1009,22 @@
         },
         {
             "name": "bower-asset/selectize",
-            "version": "v0.12.1",
+            "version": "v0.12.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/brianreavis/selectize.js.git",
-                "reference": "3dc07d40047cd98de8a8f8beacca06a73970139d"
+                "url": "https://github.com/selectize/selectize.js.git",
+                "reference": "abc8a560a8335a017790c2a799925cc123670bfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianreavis/selectize.js/zipball/3dc07d40047cd98de8a8f8beacca06a73970139d",
-                "reference": "3dc07d40047cd98de8a8f8beacca06a73970139d",
+                "url": "https://api.github.com/repos/selectize/selectize.js/zipball/abc8a560a8335a017790c2a799925cc123670bfc",
+                "reference": "abc8a560a8335a017790c2a799925cc123670bfc",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/jquery": ">=1.7.0",
                 "bower-asset/microplugin": "dev-0.0.x|0.0.x",
-                "bower-asset/sifter": "dev-0.4.x|0.4.x"
+                "bower-asset/sifter": "dev-0.5.x|0.5.x"
             },
             "require-dev": {
                 "bower-asset/bootstrap-2": "2",
@@ -972,16 +1069,16 @@
         },
         {
             "name": "bower-asset/sifter",
-            "version": "v0.4.5",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brianreavis/sifter.js.git",
-                "reference": "facff802f388feba9bc4c649fe5acd3ad53d84e9"
+                "reference": "4ba7422542bf188c1fdb4bbc341fc4fcc1ff0680"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianreavis/sifter.js/zipball/facff802f388feba9bc4c649fe5acd3ad53d84e9",
-                "reference": "facff802f388feba9bc4c649fe5acd3ad53d84e9",
+                "url": "https://api.github.com/repos/brianreavis/sifter.js/zipball/4ba7422542bf188c1fdb4bbc341fc4fcc1ff0680",
+                "reference": "4ba7422542bf188c1fdb4bbc341fc4fcc1ff0680",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -1051,6 +1148,40 @@
             ]
         },
         {
+            "name": "bower-asset/x-editable",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vitalets/x-editable.git",
+                "reference": "f32802f48a33b8a7ec9cca32eec4ca844b7d39b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vitalets/x-editable/zipball/f32802f48a33b8a7ec9cca32eec4ca844b7d39b2",
+                "reference": "f32802f48a33b8a7ec9cca32eec4ca844b7d39b2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-ignore": [
+                    "CHANGELOG.txt",
+                    "Gruntfile.js",
+                    "LICENSE-MIT",
+                    "Package.nuspec",
+                    "README.md",
+                    "composer.json",
+                    "package.json",
+                    "node_modules",
+                    "components",
+                    "src",
+                    "test"
+                ]
+            }
+        },
+        {
             "name": "bower-asset/yii2-pjax",
             "version": "v2.0.6",
             "source": {
@@ -1090,12 +1221,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/c006/yii2-migration-utility.git",
-                "reference": "d855b45b6a27311814e2660e70f61e46dfa771ff"
+                "reference": "33deea7b96c9b36b76b2484cdd73d8e11d6314d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/c006/yii2-migration-utility/zipball/d855b45b6a27311814e2660e70f61e46dfa771ff",
-                "reference": "d855b45b6a27311814e2660e70f61e46dfa771ff",
+                "url": "https://api.github.com/repos/c006/yii2-migration-utility/zipball/33deea7b96c9b36b76b2484cdd73d8e11d6314d6",
+                "reference": "33deea7b96c9b36b76b2484cdd73d8e11d6314d6",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1121,7 +1252,7 @@
                 "tables",
                 "yii2"
             ],
-            "time": "2016-07-25 21:47:40"
+            "time": "2016-08-31 23:46:16"
         },
         {
             "name": "cebe/markdown",
@@ -1445,40 +1576,35 @@
         },
         {
             "name": "dektrium/yii2-user",
-            "version": "0.9.6",
+            "version": "0.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "ae737861ff170b9c4376b274244bd9994ee0d248"
+                "reference": "d9530a1b4213c2bd7fd8eb05d185dfe9dffde558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/ae737861ff170b9c4376b274244bd9994ee0d248",
-                "reference": "ae737861ff170b9c4376b274244bd9994ee0d248",
+                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/d9530a1b4213c2bd7fd8eb05d185dfe9dffde558",
+                "reference": "d9530a1b4213c2bd7fd8eb05d185dfe9dffde558",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "~2.0",
-                "yiisoft/yii2-authclient": "~2.0",
-                "yiisoft/yii2-bootstrap": "~2.0",
-                "yiisoft/yii2-jui": "~2.0",
-                "yiisoft/yii2-swiftmailer": "~2.0"
+                "yiisoft/yii2": "^2.0.0",
+                "yiisoft/yii2-authclient": "^2.1.0",
+                "yiisoft/yii2-bootstrap": "^2.0.0",
+                "yiisoft/yii2-swiftmailer": "^2.0.0"
             },
             "require-dev": {
-                "codeception/aspect-mock": "*",
-                "codeception/specify": "*",
-                "codeception/verify": "*",
-                "yiisoft/yii2-codeception": "~2.0"
+                "codeception/specify": "^0.4.3",
+                "codeception/verify": "^0.3.1",
+                "yiisoft/yii2-codeception": "^2.0.0"
             },
             "type": "yii2-extension",
             "extra": {
                 "bootstrap": "dektrium\\user\\Bootstrap",
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
+                    "dev-master": "0.9.x-dev",
+                    "dev-develop": "1.0.x-dev"
                 }
             },
             "autoload": {
@@ -1504,7 +1630,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2016-03-27 18:09:10"
+            "time": "2016-08-13 15:45:38"
         },
         {
             "name": "devgroup/yii2-jsoneditor",
@@ -1622,22 +1748,23 @@
         },
         {
             "name": "dmstr/yii2-backend-module",
-            "version": "0.4.1",
+            "version": "0.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-backend-module.git",
-                "reference": "ac19b3ea8497e8cce74dfc14a6d6a447af36bfbe"
+                "reference": "5315aab521c8959cffd566d11a8cb6051f8eb870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-backend-module/zipball/ac19b3ea8497e8cce74dfc14a6d6a447af36bfbe",
-                "reference": "ac19b3ea8497e8cce74dfc14a6d6a447af36bfbe",
+                "url": "https://api.github.com/repos/dmstr/yii2-backend-module/zipball/5315aab521c8959cffd566d11a8cb6051f8eb870",
+                "reference": "5315aab521c8959cffd566d11a8cb6051f8eb870",
                 "shasum": ""
             },
             "require": {
-                "dmstr/yii2-helpers": "^0.4",
-                "dmstr/yii2-pages-module": "^0.15.2",
-                "dmstr/yii2-prototype-module": "^0.2.3",
+                "dmstr/yii2-helpers": "~0.4",
+                "dmstr/yii2-pages-module": "~0.16",
+                "dmstr/yii2-prototype-module": "^0.2.7 || ~0.3",
+                "dmstr/yii2-web": "~0.3",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -1661,7 +1788,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-05-18 09:32:48"
+            "time": "2016-07-29 10:55:17"
         },
         {
             "name": "dmstr/yii2-bootstrap",
@@ -1706,26 +1833,26 @@
         },
         {
             "name": "dmstr/yii2-cms-metapackage",
-            "version": "4.4.0",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-cms-metapackage.git",
-                "reference": "8e97f26bb63df3edbf15f681fc340f45af282725"
+                "reference": "52061bf401fb74c7f47fabac404b10b8d517027e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/8e97f26bb63df3edbf15f681fc340f45af282725",
-                "reference": "8e97f26bb63df3edbf15f681fc340f45af282725",
+                "url": "https://api.github.com/repos/dmstr/yii2-cms-metapackage/zipball/52061bf401fb74c7f47fabac404b10b8d517027e",
+                "reference": "52061bf401fb74c7f47fabac404b10b8d517027e",
                 "shasum": ""
             },
             "require": {
                 "dektrium/yii2-rbac": "~0.2",
                 "dektrium/yii2-user": "^0.9.6",
-                "dmstr/yii2-adminlte-asset": "^2.2.4",
-                "dmstr/yii2-backend-module": "^0.4",
+                "dmstr/yii2-adminlte-asset": "^2.3.1",
+                "dmstr/yii2-backend-module": "^0.4.2 || ~0.5",
                 "dmstr/yii2-libs-metapackage": "~0.3",
-                "dmstr/yii2-pages-module": "0.15.*",
-                "dmstr/yii2-prototype-module": "^0.2",
+                "dmstr/yii2-pages-module": "~0.16",
+                "dmstr/yii2-prototype-module": "^0.2.3 || ~0.3",
                 "insolita/yii2-adminlte-widgets": "~1.1",
                 "lajax/yii2-translate-manager": "^1.5.1",
                 "pheme/yii2-settings": "~0.2",
@@ -1743,24 +1870,25 @@
                 }
             ],
             "description": "Content Management Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2016-05-18 08:55:15"
+            "time": "2016-05-31 16:17:40"
         },
         {
             "name": "dmstr/yii2-db",
-            "version": "0.7.4",
+            "version": "0.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-db.git",
-                "reference": "4132d8a55bb486ebbfe0d5dd7b999653bae31278"
+                "reference": "ac428df1492b3a97de09c352c29d545830b55c55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-db/zipball/4132d8a55bb486ebbfe0d5dd7b999653bae31278",
-                "reference": "4132d8a55bb486ebbfe0d5dd7b999653bae31278",
+                "url": "https://api.github.com/repos/dmstr/yii2-db/zipball/ac428df1492b3a97de09c352c29d545830b55c55",
+                "reference": "ac428df1492b3a97de09c352c29d545830b55c55",
                 "shasum": ""
             },
             "require": {
                 "mikehaertl/php-shellcommand": "1.*",
+                "schmunk42/retry": "*",
                 "yiisoft/yii2": "2.*"
             },
             "type": "yii2-extension",
@@ -1788,7 +1916,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-07-06 01:00:38"
+            "time": "2016-08-25 22:13:36"
         },
         {
             "name": "dmstr/yii2-helpers",
@@ -1916,21 +2044,22 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.15.2",
+            "version": "0.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "34c55441bbfb2ea4c45c619f51e47c790d9e0ea7"
+                "reference": "4a0bf4cd277dfd7de2c0ae4d6e4bc501ae8521c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/34c55441bbfb2ea4c45c619f51e47c790d9e0ea7",
-                "reference": "34c55441bbfb2ea4c45c619f51e47c790d9e0ea7",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/4a0bf4cd277dfd7de2c0ae4d6e4bc501ae8521c6",
+                "reference": "4a0bf4cd277dfd7de2c0ae4d6e4bc501ae8521c6",
                 "shasum": ""
             },
             "require": {
                 "devgroup/yii2-jsoneditor": "1.0.*",
                 "dmstr/yii2-web": "~0.1",
+                "insolita/yii2-adminlte-widgets": "^1.1.4",
                 "kartik-v/yii2-tree-manager": "~1.0.3",
                 "kartik-v/yii2-widget-select2": "^2.0.1",
                 "rmrevin/yii2-fontawesome": "~2.9",
@@ -1966,27 +2095,31 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2016-05-15 19:10:59"
+            "time": "2016-07-28 05:10:56"
         },
         {
             "name": "dmstr/yii2-prototype-module",
-            "version": "0.2.9",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-prototype-module.git",
-                "reference": "f4c619c905cc510d8e9221a4f0e63741b01e822d"
+                "reference": "aa8829d204cc6a572c924dde20dea64087ad64a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-prototype-module/zipball/f4c619c905cc510d8e9221a4f0e63741b01e822d",
-                "reference": "f4c619c905cc510d8e9221a4f0e63741b01e822d",
+                "url": "https://api.github.com/repos/dmstr/yii2-prototype-module/zipball/aa8829d204cc6a572c924dde20dea64087ad64a6",
+                "reference": "aa8829d204cc6a572c924dde20dea64087ad64a6",
                 "shasum": ""
             },
             "require": {
                 "2amigos/yii2-ckeditor-widget": "^1.0.4",
                 "beowulfenator/yii2-json-editor": "^1.1.2",
-                "yiisoft/yii2": "*",
+                "yiisoft/yii2": "2.*",
                 "yiisoft/yii2-twig": "^2.0.4"
+            },
+            "conflict": {
+                "dmstr/yii2-pages-module": "<0.18.0",
+                "yiisoft/yii2-twig": "2.0.5"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -2009,20 +2142,20 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-07-13 00:49:26"
+            "time": "2016-09-15 15:48:51"
         },
         {
             "name": "dmstr/yii2-web",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-web.git",
-                "reference": "f7022536dbf517f9185428ff68e4f9239a703c0c"
+                "reference": "2c63c16542c1b77849e21379e69405ed3f90c621"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-web/zipball/f7022536dbf517f9185428ff68e4f9239a703c0c",
-                "reference": "f7022536dbf517f9185428ff68e4f9239a703c0c",
+                "url": "https://api.github.com/repos/dmstr/yii2-web/zipball/2c63c16542c1b77849e21379e69405ed3f90c621",
+                "reference": "2c63c16542c1b77849e21379e69405ed3f90c621",
                 "shasum": ""
             },
             "require": {
@@ -2051,7 +2184,7 @@
                 "traits",
                 "yii2"
             ],
-            "time": "2016-04-06 19:48:18"
+            "time": "2016-08-02 00:03:32"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -2144,33 +2277,31 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "7.4.5",
+            "version": "7.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "a138adeb07233059c2a8d3caea7b6a6bcbee6765"
+                "reference": "78b06909657a11d3b915bd348adf982854dbbc29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a138adeb07233059c2a8d3caea7b6a6bcbee6765",
-                "reference": "a138adeb07233059c2a8d3caea7b6a6bcbee6765",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/78b06909657a11d3b915bd348adf982854dbbc29",
+                "reference": "78b06909657a11d3b915bd348adf982854dbbc29",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.3"
+                "giggsey/locale": "^1.0",
+                "php": ">=5.3.2"
             },
             "require-dev": {
                 "pear/pear-core-minimal": "^1.9",
                 "pear/pear_exception": "^1.0",
                 "pear/versioncontrol_git": "dev-master",
-                "phing/phing": "~2.7",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6",
-                "symfony/console": "^2.5"
-            },
-            "suggest": {
-                "ext-intl": "To use the geocoder and carrier mapping"
+                "phing/phing": "^2.7",
+                "phpunit/phpunit": "^4.8|^5.0",
+                "satooshi/php-coveralls": "^1.0",
+                "symfony/console": "^2.8|^3.0"
             },
             "type": "library",
             "extra": {
@@ -2204,7 +2335,53 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2016-07-14 10:56:47"
+            "time": "2016-09-12 19:11:13"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "9087acaf8493472fcd129118017fd7e06be3d8fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/9087acaf8493472fcd129118017fd7e06be3d8fa",
+                "reference": "9087acaf8493472fcd129118017fd7e06be3d8fa",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "dev-master",
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "^4.8|^5.0",
+                "satooshi/php-coveralls": "^1.0",
+                "symfony/console": "^2.8|^3.0",
+                "symfony/filesystem": "^2.8|^3.0",
+                "symfony/finder": "^2.8|^3.0",
+                "symfony/process": "^2.8|^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "http://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "time": "2016-08-04 23:02:29"
         },
         {
             "name": "insolita/yii2-adminlte-widgets",
@@ -2250,16 +2427,16 @@
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
-            "version": "v4.3.3",
+            "version": "v4.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "8c14423e41cfe6c6e0c1935a6c31a1136240d5d9"
+                "reference": "abde5a9611d4939b951fdd00f70a9fec935c7b6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/8c14423e41cfe6c6e0c1935a6c31a1136240d5d9",
-                "reference": "8c14423e41cfe6c6e0c1935a6c31a1136240d5d9",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/abde5a9611d4939b951fdd00f70a9fec935c7b6b",
+                "reference": "abde5a9611d4939b951fdd00f70a9fec935c7b6b",
                 "shasum": ""
             },
             "type": "library",
@@ -2299,7 +2476,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2016-07-09 12:56:05"
+            "time": "2016-08-07 07:50:42"
         },
         {
             "name": "kartik-v/bootstrap-popover-x",
@@ -2621,16 +2798,16 @@
         },
         {
             "name": "kartik-v/yii2-dialog",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-dialog.git",
-                "reference": "c0f83291c050fb05a1dc66a90ad6151de2d1e982"
+                "reference": "4aaf8918c6dbd90218b6ad9036b1aae211480716"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/c0f83291c050fb05a1dc66a90ad6151de2d1e982",
-                "reference": "c0f83291c050fb05a1dc66a90ad6151de2d1e982",
+                "url": "https://api.github.com/repos/kartik-v/yii2-dialog/zipball/4aaf8918c6dbd90218b6ad9036b1aae211480716",
+                "reference": "4aaf8918c6dbd90218b6ad9036b1aae211480716",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2846,7 @@
                 "modal",
                 "yii2"
             ],
-            "time": "2016-02-22 10:58:46"
+            "time": "2016-09-13 18:15:26"
         },
         {
             "name": "kartik-v/yii2-editable",
@@ -2780,19 +2957,20 @@
         },
         {
             "name": "kartik-v/yii2-grid",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-grid.git",
-                "reference": "fe29bcf8f46bde42aa3eb067851b38dc07cd4d8a"
+                "reference": "f03b9c7cb8276eedd865fb3cad89ff12f2dd33c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/fe29bcf8f46bde42aa3eb067851b38dc07cd4d8a",
-                "reference": "fe29bcf8f46bde42aa3eb067851b38dc07cd4d8a",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/f03b9c7cb8276eedd865fb3cad89ff12f2dd33c2",
+                "reference": "f03b9c7cb8276eedd865fb3cad89ff12f2dd33c2",
                 "shasum": ""
             },
             "require": {
+                "kartik-v/yii2-dialog": "~1.0",
                 "kartik-v/yii2-krajee-base": "~1.7"
             },
             "type": "yii2-extension",
@@ -2825,7 +3003,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-04-09 20:31:20"
+            "time": "2016-08-16 19:21:27"
         },
         {
             "name": "kartik-v/yii2-helpers",
@@ -2833,12 +3011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-helpers.git",
-                "reference": "082a199f4e95e5f32975005ff46ff3880ced8406"
+                "reference": "2b400821ef94de43cd2dca4923e665e703cf4828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-helpers/zipball/082a199f4e95e5f32975005ff46ff3880ced8406",
-                "reference": "082a199f4e95e5f32975005ff46ff3880ced8406",
+                "url": "https://api.github.com/repos/kartik-v/yii2-helpers/zipball/2b400821ef94de43cd2dca4923e665e703cf4828",
+                "reference": "2b400821ef94de43cd2dca4923e665e703cf4828",
                 "shasum": ""
             },
             "require": {
@@ -2871,20 +3049,20 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2016-04-27 13:50:39"
+            "time": "2016-08-11 05:56:16"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
-            "version": "1.8.5",
+            "version": "v1.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "7f7a45ffe193fe673f72b9effc01b08499f2a454"
+                "reference": "8f558809e6093c8f4f4599b7b9fd64b366b22a60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/7f7a45ffe193fe673f72b9effc01b08499f2a454",
-                "reference": "7f7a45ffe193fe673f72b9effc01b08499f2a454",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/8f558809e6093c8f4f4599b7b9fd64b366b22a60",
+                "reference": "8f558809e6093c8f4f4599b7b9fd64b366b22a60",
                 "shasum": ""
             },
             "require": {
@@ -2922,7 +3100,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-05-07 19:45:52"
+            "time": "2016-09-04 09:25:29"
         },
         {
             "name": "kartik-v/yii2-mpdf",
@@ -3277,16 +3455,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-datepicker",
-            "version": "v1.4.1",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
-                "reference": "4ccb7262716f405f51720956a453a61a1b48dd53"
+                "reference": "8738f6dc3211d949b05189ba103aab786143fc6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/4ccb7262716f405f51720956a453a61a1b48dd53",
-                "reference": "4ccb7262716f405f51720956a453a61a1b48dd53",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/8738f6dc3211d949b05189ba103aab786143fc6c",
+                "reference": "8738f6dc3211d949b05189ba103aab786143fc6c",
                 "shasum": ""
             },
             "require": {
@@ -3327,7 +3505,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2016-07-01 11:15:25"
+            "time": "2016-09-04 10:52:50"
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
@@ -4047,16 +4225,16 @@
         },
         {
             "name": "lajax/yii2-translate-manager",
-            "version": "1.5.4",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lajax/yii2-translate-manager.git",
-                "reference": "5215e3c8bd3adefaed9657ba87dd1a7383698fd8"
+                "reference": "1dd264a088af99b7c204ea347ae6bd405a5f12b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lajax/yii2-translate-manager/zipball/5215e3c8bd3adefaed9657ba87dd1a7383698fd8",
-                "reference": "5215e3c8bd3adefaed9657ba87dd1a7383698fd8",
+                "url": "https://api.github.com/repos/lajax/yii2-translate-manager/zipball/1dd264a088af99b7c204ea347ae6bd405a5f12b1",
+                "reference": "1dd264a088af99b7c204ea347ae6bd405a5f12b1",
                 "shasum": ""
             },
             "require": {
@@ -4088,7 +4266,7 @@
                 "translate",
                 "yii2"
             ],
-            "time": "2016-04-10 15:21:44"
+            "time": "2016-07-12 14:25:30"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -4125,6 +4303,53 @@
                 "shell"
             ],
             "time": "2016-07-16 09:42:31"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "1.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+                "reference": "7b08ec6f75791e130012f206e3f7b0e76e18e3d7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/translation": "~2.6|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Carbon\\": "src/Carbon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "http://carbon.nesbot.com",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2015-11-04 20:07:17"
         },
         {
             "name": "open-ecommerce/yii2-backuprestore",
@@ -4215,16 +4440,16 @@
         },
         {
             "name": "pheme/yii2-toggle-column",
-            "version": "0.4",
+            "version": "0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phemellc/yii2-toggle-column.git",
-                "reference": "7946b3d385eab05126f64d746fbf3ac4ad0551ec"
+                "reference": "b3db78500103b3fd24b3ff67f9eaeb155ca5d74c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phemellc/yii2-toggle-column/zipball/7946b3d385eab05126f64d746fbf3ac4ad0551ec",
-                "reference": "7946b3d385eab05126f64d746fbf3ac4ad0551ec",
+                "url": "https://api.github.com/repos/phemellc/yii2-toggle-column/zipball/b3db78500103b3fd24b3ff67f9eaeb155ca5d74c",
+                "reference": "b3db78500103b3fd24b3ff67f9eaeb155ca5d74c",
                 "shasum": ""
             },
             "require": {
@@ -4253,7 +4478,7 @@
                 "toggle",
                 "yii2"
             ],
-            "time": "2016-05-20 08:05:09"
+            "time": "2016-09-09 01:46:16"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -4314,16 +4539,16 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.15.1",
+            "version": "2.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "d2777130bc926bc670a4e50c2f504a0fb782efb1"
+                "reference": "ab08282b8cd05c570634926f41c868cf902981e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/d2777130bc926bc670a4e50c2f504a0fb782efb1",
-                "reference": "d2777130bc926bc670a4e50c2f504a0fb782efb1",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/ab08282b8cd05c570634926f41c868cf902981e7",
+                "reference": "ab08282b8cd05c570634926f41c868cf902981e7",
                 "shasum": ""
             },
             "require": {
@@ -4361,7 +4586,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2016-05-28 21:18:32"
+            "time": "2016-08-31 12:41:25"
         },
         {
             "name": "schmunk42/retry",
@@ -4506,6 +4731,129 @@
             "time": "2016-07-08 11:51:25"
         },
         {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-05-18 14:26:46"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "v3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "a35edc277513c9bc0f063ca174c36b346f974528"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/a35edc277513c9bc0f063ca174c36b346f974528",
+                "reference": "a35edc277513c9bc0f063ca174c36b346f974528",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "conflict": {
+                "symfony/config": "<2.8"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/intl": "~2.8|~3.0",
+                "symfony/yaml": "~2.8|~3.0"
+            },
+            "suggest": {
+                "psr/log": "To use logging capability in translator",
+                "symfony/config": "",
+                "symfony/yaml": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Translation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Translation Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-08-05 08:37:39"
+        },
+        {
             "name": "trntv/yii2-aceeditor",
             "version": "2.0.0",
             "source": {
@@ -4549,16 +4897,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.1",
+            "version": "v1.24.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
+                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
+                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
                 "shasum": ""
             },
             "require": {
@@ -4606,20 +4954,20 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-05-30 09:11:59"
+            "time": "2016-09-01 17:50:53"
         },
         {
             "name": "twilio/sdk",
-            "version": "4.10.0",
+            "version": "4.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "292fef46097bcc935007a117ddce9acc40a1a8c1"
+                "reference": "6e4b45fc3f8b56c088dfecf4bced76c712cb6182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/292fef46097bcc935007a117ddce9acc40a1a8c1",
-                "reference": "292fef46097bcc935007a117ddce9acc40a1a8c1",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/6e4b45fc3f8b56c088dfecf4bced76c712cb6182",
+                "reference": "6e4b45fc3f8b56c088dfecf4bced76c712cb6182",
                 "shasum": ""
             },
             "require": {
@@ -4656,20 +5004,20 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2016-01-29 00:19:22"
+            "time": "2016-09-01 18:42:52"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -4681,7 +5029,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -4706,7 +5054,268 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "yii2mod/yii2-behaviors",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-behaviors.git",
+                "reference": "36b8ccf1f1349d2d6ede68112c3b7a7aa9ff8f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-behaviors/zipball/36b8ccf1f1349d2d6ede68112c3b7a7aa9ff8f07",
+                "reference": "36b8ccf1f1349d2d6ede68112c3b7a7aa9ff8f07",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "~1.0",
+                "yiisoft/yii2": ">=2.0.5"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\behaviors\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Semenov",
+                    "email": "disemx@gmail.com"
+                },
+                {
+                    "name": "Igor Chepurnoy",
+                    "email": "igorzfort@gmail.com"
+                }
+            ],
+            "description": "Yii2 behaviors",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-07-05 12:12:12"
+        },
+        {
+            "name": "yii2mod/yii2-cms",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-cms.git",
+                "reference": "3683adadba9ffc7c2a635c47b18bfec0e604581c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-cms/zipball/3683adadba9ffc7c2a635c47b18bfec0e604581c",
+                "reference": "3683adadba9ffc7c2a635c47b18bfec0e604581c",
+                "shasum": ""
+            },
+            "require": {
+                "asofter/yii2-imperavi-redactor": "*",
+                "yii2mod/yii2-comments": "*",
+                "yii2mod/yii2-editable": "*",
+                "yii2mod/yii2-enum": "*",
+                "yii2mod/yii2-toggle-column": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\cms\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Semenov",
+                    "email": "disemx@gmail.com"
+                },
+                {
+                    "name": "Igor Chepurnoy",
+                    "email": "igorzfort@gmail.com"
+                }
+            ],
+            "description": "Yii2 CMS extension",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-09-07 10:13:40"
+        },
+        {
+            "name": "yii2mod/yii2-comments",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-comments.git",
+                "reference": "dce8405558f4d8f4169016656eb2d4bc01879c62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-comments/zipball/dce8405558f4d8f4169016656eb2d4bc01879c62",
+                "reference": "dce8405558f4d8f4169016656eb2d4bc01879c62",
+                "shasum": ""
+            },
+            "require": {
+                "asofter/yii2-imperavi-redactor": "*",
+                "yii2mod/yii2-behaviors": "*",
+                "yii2mod/yii2-editable": "*",
+                "yii2mod/yii2-enum": "*",
+                "yiisoft/yii2": ">=2.0.8"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\comments\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Chepurnoy",
+                    "email": "igorzfort@gmail.com"
+                }
+            ],
+            "description": "Comments module for Yii2",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-08-03 16:10:43"
+        },
+        {
+            "name": "yii2mod/yii2-editable",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-editable.git",
+                "reference": "d69e31672ebbf599c59ce34271f113c0c45a7596"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-editable/zipball/d69e31672ebbf599c59ce34271f113c0c45a7596",
+                "reference": "d69e31672ebbf599c59ce34271f113c0c45a7596",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/x-editable": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\editable\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Chepurnoi",
+                    "email": "igorzfort@gmail.com"
+                }
+            ],
+            "description": "Yii2 editable field extension",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-07-01 15:36:54"
+        },
+        {
+            "name": "yii2mod/yii2-enum",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-enum.git",
+                "reference": "32cdfa695f62c1a6dd8aa6aa36b0765ce33fdb01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-enum/zipball/32cdfa695f62c1a6dd8aa6aa36b0765ce33fdb01",
+                "reference": "32cdfa695f62c1a6dd8aa6aa36b0765ce33fdb01",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\enum\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Semenov",
+                    "email": "disemx@gmail.com"
+                }
+            ],
+            "description": "Yii2 Enumerable helpers",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-08-06 12:21:15"
+        },
+        {
+            "name": "yii2mod/yii2-toggle-column",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2mod/yii2-toggle-column.git",
+                "reference": "8734c298c4004395138da6a019f5adb37c3ac598"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2mod/yii2-toggle-column/zipball/8734c298c4004395138da6a019f5adb37c3ac598",
+                "reference": "8734c298c4004395138da6a019f5adb37c3ac598",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2mod\\toggle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Chepurnoy",
+                    "email": "igorzfort@gmail.com"
+                }
+            ],
+            "description": "Provides a toggle data column and action",
+            "keywords": [
+                "column",
+                "extension",
+                "toggle",
+                "yii2"
+            ],
+            "time": "2015-06-17 09:40:34"
         },
         {
             "name": "yiisoft/yii2",
@@ -4804,21 +5413,20 @@
         },
         {
             "name": "yiisoft/yii2-authclient",
-            "version": "2.0.6",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "96dd47c762749991a57d8c343b1a1ecfadf9c4c8"
+                "reference": "5ed7ebfda270d87197f7640b2a9c046297080cac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/96dd47c762749991a57d8c343b1a1ecfadf9c4c8",
-                "reference": "96dd47c762749991a57d8c343b1a1ecfadf9c4c8",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/5ed7ebfda270d87197f7640b2a9c046297080cac",
+                "reference": "5ed7ebfda270d87197f7640b2a9c046297080cac",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "yiisoft/yii2": ">=2.0.4"
+                "yiisoft/yii2-httpclient": "~2.0.1"
             },
             "type": "yii2-extension",
             "extra": {
@@ -4844,11 +5452,12 @@
             "description": "External authentication via OAuth and OpenID for the Yii framework",
             "keywords": [
                 "OpenId",
+                "api",
                 "auth",
                 "oauth",
                 "yii2"
             ],
-            "time": "2016-07-08 13:58:12"
+            "time": "2016-08-29 09:21:09"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -4948,6 +5557,53 @@
             "time": "2016-02-06 00:49:24"
         },
         {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "05056e8f13fdee09c252686cea62f0889ecab8b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/05056e8f13fdee09c252686cea62f0889ecab8b7",
+                "reference": "05056e8f13fdee09c252686cea62f0889ecab8b7",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "time": "2016-08-04 13:29:03"
+        },
+        {
             "name": "yiisoft/yii2-jui",
             "version": "2.0.6",
             "source": {
@@ -4999,21 +5655,21 @@
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "e2c6315caff30a9271a7afad4d684627721dc69a"
+                "reference": "26b900767f1031ff3a4668dfa36c10595875f0a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/e2c6315caff30a9271a7afad4d684627721dc69a",
-                "reference": "e2c6315caff30a9271a7afad4d684627721dc69a",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/26b900767f1031ff3a4668dfa36c10595875f0a5",
+                "reference": "26b900767f1031ff3a4668dfa36c10595875f0a5",
                 "shasum": ""
             },
             "require": {
                 "swiftmailer/swiftmailer": "~5.0",
-                "yiisoft/yii2": ">=2.0.4"
+                "yiisoft/yii2": "~2.0.4"
             },
             "type": "yii2-extension",
             "extra": {
@@ -5045,7 +5701,7 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2016-03-17 03:58:49"
+            "time": "2016-09-09 11:48:11"
         },
         {
             "name": "yiisoft/yii2-twig",
@@ -5268,134 +5924,36 @@
             "time": "2015-10-27 09:29:21"
         },
         {
-            "name": "dmstr/yii2-cms-dev-metapackage",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dmstr/yii2-cms-dev-metapackage.git",
-                "reference": "ba46557bd34bbfbc167762b01c40bf2cbad75c98"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-cms-dev-metapackage/zipball/ba46557bd34bbfbc167762b01c40bf2cbad75c98",
-                "reference": "ba46557bd34bbfbc167762b01c40bf2cbad75c98",
-                "shasum": ""
-            },
-            "require": {
-                "fabpot/php-cs-fixer": "1.* | 2.*",
-                "schmunk42/yii2-giiant": "~0.6.2 | ~0.7",
-                "schmunk42/yii2-markdocs-module": "~0.3",
-                "yiisoft/yii2-apidoc": "2.*",
-                "yiisoft/yii2-codeception": "2.*",
-                "yiisoft/yii2-coding-standards": "2.*",
-                "yiisoft/yii2-debug": "2.*",
-                "yiisoft/yii2-faker": "2.*",
-                "yiisoft/yii2-gii": "2.*"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "tobias@diemeisterei.de"
-                }
-            ],
-            "description": "Content Management Development Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2016-04-04 06:45:27"
-        },
-        {
-            "name": "fabpot/php-cs-fixer",
-            "version": "v1.11.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "41dc93abd2937a85a3889e28765231d574d2bac8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/41dc93abd2937a85a3889e28765231d574d2bac8",
-                "reference": "41dc93abd2937a85a3889e28765231d574d2bac8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=5.3.6",
-                "sebastian/diff": "~1.1",
-                "symfony/console": "~2.3|~3.0",
-                "symfony/event-dispatcher": "~2.1|~3.0",
-                "symfony/filesystem": "~2.1|~3.0",
-                "symfony/finder": "~2.1|~3.0",
-                "symfony/process": "~2.3|~3.0",
-                "symfony/stopwatch": "~2.5|~3.0"
-            },
-            "conflict": {
-                "hhvm": "<3.9"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.5|^5",
-                "satooshi/php-coveralls": "^0.7.1"
-            },
-            "bin": [
-                "php-cs-fixer"
-            ],
-            "type": "application",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\CS\\": "Symfony/CS/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dariusz Rumiński",
-                    "email": "dariusz.ruminski@gmail.com"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "A tool to automatically fix PHP code style",
-            "abandoned": "friendsofphp/php-cs-fixer",
-            "time": "2016-07-22 06:46:28"
-        },
-        {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v1.11.6",
+            "version": "v1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "41dc93abd2937a85a3889e28765231d574d2bac8"
+                "reference": "d33ee60f3d3e6152888b7f3a385f49e5c43bf1bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/41dc93abd2937a85a3889e28765231d574d2bac8",
-                "reference": "41dc93abd2937a85a3889e28765231d574d2bac8",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/d33ee60f3d3e6152888b7f3a385f49e5c43bf1bf",
+                "reference": "d33ee60f3d3e6152888b7f3a385f49e5c43bf1bf",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.3.6",
-                "sebastian/diff": "~1.1",
-                "symfony/console": "~2.3|~3.0",
-                "symfony/event-dispatcher": "~2.1|~3.0",
-                "symfony/filesystem": "~2.1|~3.0",
-                "symfony/finder": "~2.1|~3.0",
-                "symfony/process": "~2.3|~3.0",
-                "symfony/stopwatch": "~2.5|~3.0"
+                "php": "^5.3.6 || >=7.0 <7.2",
+                "sebastian/diff": "^1.1",
+                "symfony/console": "^2.3 || ^3.0",
+                "symfony/event-dispatcher": "^2.1 || ^3.0",
+                "symfony/filesystem": "^2.1 || ^3.0",
+                "symfony/finder": "^2.1 || ^3.0",
+                "symfony/process": "^2.3 || ^3.0",
+                "symfony/stopwatch": "^2.5 || ^3.0"
             },
             "conflict": {
                 "hhvm": "<3.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.5|^5",
-                "satooshi/php-coveralls": "^0.7.1"
+                "satooshi/php-coveralls": "^1.0"
             },
             "bin": [
                 "php-cs-fixer"
@@ -5421,7 +5979,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2016-07-22 06:46:28"
+            "time": "2016-09-07 06:48:24"
         },
         {
             "name": "fzaninotto/faker",
@@ -5736,16 +6294,16 @@
         },
         {
             "name": "schmunk42/yii2-giiant",
-            "version": "0.8.4",
+            "version": "0.9.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "24b3d1c2035287741cb93a9420e1efdfb382c008"
+                "reference": "e7d6c81c2c22bbc897c778c2d00874740e7aa0c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/24b3d1c2035287741cb93a9420e1efdfb382c008",
-                "reference": "24b3d1c2035287741cb93a9420e1efdfb382c008",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/e7d6c81c2c22bbc897c778c2d00874740e7aa0c8",
+                "reference": "e7d6c81c2c22bbc897c778c2d00874740e7aa0c8",
                 "shasum": ""
             },
             "require": {
@@ -5788,7 +6346,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2016-07-29 09:54:41"
+            "time": "2016-09-15 13:29:41"
         },
         {
             "name": "schmunk42/yii2-markdocs-module",
@@ -5919,16 +6477,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.6.2",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "4edb770cb853def6e60c93abb088ad5ac2010c83"
+                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4edb770cb853def6e60c93abb088ad5ac2010c83",
-                "reference": "4edb770cb853def6e60c93abb088ad5ac2010c83",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
                 "shasum": ""
             },
             "require": {
@@ -5993,20 +6551,20 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-07-13 23:29:13"
+            "time": "2016-09-01 23:53:02"
         },
         {
             "name": "symfony/console",
-            "version": "v3.1.2",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "747154aa69b0f83cd02fc9aa554836dee417631a"
+                "reference": "8ea494c34f0f772c3954b5fbe00bffc5a435e563"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/747154aa69b0f83cd02fc9aa554836dee417631a",
-                "reference": "747154aa69b0f83cd02fc9aa554836dee417631a",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8ea494c34f0f772c3954b5fbe00bffc5a435e563",
+                "reference": "8ea494c34f0f772c3954b5fbe00bffc5a435e563",
                 "shasum": ""
             },
             "require": {
@@ -6053,20 +6611,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 07:02:31"
+            "time": "2016-08-19 06:48:39"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.2",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "7f9839ede2070f53e7e2f0849b9bd14748c434c5"
+                "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/7f9839ede2070f53e7e2f0849b9bd14748c434c5",
-                "reference": "7f9839ede2070f53e7e2f0849b9bd14748c434c5",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
+                "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
                 "shasum": ""
             },
             "require": {
@@ -6113,20 +6671,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:41:56"
+            "time": "2016-07-19 10:45:57"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.1.2",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "322da5f0910d8aa0b25fa65ffccaba68dbddb890"
+                "reference": "bb29adceb552d202b6416ede373529338136e84f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/322da5f0910d8aa0b25fa65ffccaba68dbddb890",
-                "reference": "322da5f0910d8aa0b25fa65ffccaba68dbddb890",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/bb29adceb552d202b6416ede373529338136e84f",
+                "reference": "bb29adceb552d202b6416ede373529338136e84f",
                 "shasum": ""
             },
             "require": {
@@ -6162,20 +6720,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:41:56"
+            "time": "2016-07-20 05:44:26"
         },
         {
             "name": "symfony/finder",
-            "version": "v3.1.2",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "8201978de88a9fa0923e18601bb17f1df9c721e7"
+                "reference": "e568ef1784f447a0e54dcb6f6de30b9747b0f577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/8201978de88a9fa0923e18601bb17f1df9c721e7",
-                "reference": "8201978de88a9fa0923e18601bb17f1df9c721e7",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/e568ef1784f447a0e54dcb6f6de30b9747b0f577",
+                "reference": "e568ef1784f447a0e54dcb6f6de30b9747b0f577",
                 "shasum": ""
             },
             "require": {
@@ -6211,79 +6769,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:41:56"
-        },
-        {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
-                "reference": "dff51f72b0706335131b00a7f49606168c582594",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Mbstring extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2016-05-18 14:26:46"
+            "time": "2016-08-26 12:04:02"
         },
         {
             "name": "symfony/process",
-            "version": "v3.1.2",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "5c11a1a4d4016662eeaf0f8757958c7de069f9a0"
+                "reference": "e64e93041c80e77197ace5ab9385dedb5a143697"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/5c11a1a4d4016662eeaf0f8757958c7de069f9a0",
-                "reference": "5c11a1a4d4016662eeaf0f8757958c7de069f9a0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/e64e93041c80e77197ace5ab9385dedb5a143697",
+                "reference": "e64e93041c80e77197ace5ab9385dedb5a143697",
                 "shasum": ""
             },
             "require": {
@@ -6319,11 +6818,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-06-29 05:42:25"
+            "time": "2016-08-16 14:58:24"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v3.1.2",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -6704,7 +7203,8 @@
         "kartik-v/dependent-dropdown": 20,
         "open-ecommerce/yii2-backuprestore": 20,
         "filipajdacic/yii2-twilio": 20,
-        "c006/yii2-migration-utility": 20
+        "c006/yii2-migration-utility": 20,
+        "schmunk42/yii2-giiant": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

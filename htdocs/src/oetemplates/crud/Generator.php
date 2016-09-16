@@ -63,7 +63,12 @@ class Generator extends \yii\gii\generators\crud\Generator
     /**
      * @var string translation catalogue
      */
-    public $messageCatalog = 'app';
+    public $messageCategory = 'cruds';
+
+    /**
+     * @var string translation catalogue for model related translations
+     */
+    public $modelMessageCategory = 'models';
 
     /**
      * @var int maximum number of columns to show in grid
@@ -89,6 +94,10 @@ class Generator extends \yii\gii\generators\crud\Generator
      * @var bool whether to add an access filter to controllers
      */
     public $accessFilter = false;
+    
+    public $generateAccessFilterMigrations = false;
+
+    public $baseTraits;
 
     /**
      * @var sting controller base namespace
@@ -295,7 +304,7 @@ class Generator extends \yii\gii\generators\crud\Generator
             }
         }
 
-        if ($this->accessFilter){
+        if ($this->generateAccessFilterMigrations){
             
             /**
              * access migration

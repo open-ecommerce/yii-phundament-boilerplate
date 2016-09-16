@@ -9,9 +9,11 @@ use yii\helpers\StringHelper;
  */
 
 /** @var \yii\db\ActiveRecord $model */
+/** @var $generator \schmunk42\giiant\generators\crud\Generator */
+
 $model = new $generator->modelClass();
 $model->setScenario('crud');
-$modelName = StringHelper::basename($model::className());
+$modelName = Inflector::camel2words(StringHelper::basename($model::className()));
 
 $className = $model::className();
 
@@ -25,7 +27,7 @@ $urlParams = $generator->generateUrlParams();
 echo "<?php\n";
 ?>
 
-use dmstr\helpers\Html;
+use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\GridView;
 use yii\widgets\DetailView;
@@ -38,8 +40,8 @@ use dmstr\bootstrap\Tabs;
 */
 $copyParams = $model->attributes;
 
-$this->title = Yii::t('<?= $generator->messageCategory ?>', '<?= StringHelper::basename($className) ?>');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('<?= $generator->messageCategory ?>', '<?=Inflector::pluralize(StringHelper::basename($className)) ?>'), 'url' => ['index']];
+$this->title = Yii::t('<?= $generator->modelMessageCategory ?>', '<?= $modelName ?>');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('<?= $generator->modelMessageCategory ?>', '<?=Inflector::pluralize($modelName) ?>'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => (string)$model-><?= $generator->getNameAttribute() ?>, 'url' => ['view', <?= $urlParams ?>]];
 $this->params['breadcrumbs'][] = <?= $generator->generateString('View') ?>;
 ?>
@@ -56,7 +58,7 @@ $this->params['breadcrumbs'][] = <?= $generator->generateString('View') ?>;
 
 
     <h1>
-        <?= "<?= Yii::t('{$generator->messageCategory}', '{$modelName}') ?>" ?>
+        <?= "<?= Yii::t('{$generator->modelMessageCategory}', '{$modelName}') ?>" ?>
         <small>
             <?= '<?= $model->'.$generator->getModelNameAttribute($generator->modelClass).' ?>' ?>
         </small>
@@ -178,7 +180,7 @@ EOS;
             '<span class=\"glyphicon glyphicon-plus\"></span> ' . ".$generator->generateString('New')." . ' ".
             Inflector::singularize(Inflector::camel2words($name))."',
             ['".$generator->createRelationRoute($relation, 'create')."', '".
-            Inflector::singularize($name)."' => ['".key($relation->link)."' => \$model->".$model->primaryKey()[0]."]],
+            Inflector::id2camel($generator->generateRelationTo($relation), '-', true)."' => ['".key($relation->link)."' => \$model->".$model->primaryKey()[0]."]],
             ['class'=>'btn btn-success btn-xs']
         ); ?>\n";
         echo $addButton;

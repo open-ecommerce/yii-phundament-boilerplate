@@ -1,14 +1,14 @@
 {
-    "name": "helptext/app",
-    "description": "working pilot for a platform to empower existing non-profit helplines by providing access and management of mobile text",
+    "name": "oecms/app",
+    "description": "proof of concept and starting point for development with yii2 and phundament",
     "keywords": [
-        "helptext",
+        "cms",
         "organizations",
         "application",
         "charities",
         "open-ecommerce",
         "open-ecommerce.org",
-        "helpline"
+        "phundament"
     ],
     "homepage": "http://www.helptext.uk/",
     "type": "project",
@@ -32,7 +32,7 @@
     ],
   "minimum-stability": "stable",
   "require": {
-    "dmstr/yii2-cms-metapackage": "^4.2.0",
+    "dmstr/yii2-cms-metapackage": "*",
     "vlucas/phpdotenv": "2.*",
     "yiisoft/yii2": "^2.0.7",
     "yiisoft/yii2-bootstrap": "*",
@@ -61,10 +61,21 @@
     "dmstr/yii2-adminlte-asset": "2.*",
     "borales/yii2-phone-input": "*",
     "2amigos/yii2-chartjs-widget" : "~2.0",
-    "c006/yii2-migration-utility": "dev-master"
+    "c006/yii2-migration-utility": "dev-master",
+    "yii2mod/yii2-comments": "*",
+    "yii2mod/yii2-cms": "*",
+    "2amigos/yii2-translateable-behavior": "*"
   },
   "require-dev": {
-    "dmstr/yii2-cms-dev-metapackage": "^1.1.0",
+    "friendsofphp/php-cs-fixer": "1.* | 2.*",
+    "schmunk42/yii2-giiant": "0.9.0-beta2",
+    "schmunk42/yii2-markdocs-module": "~0.3",
+    "yiisoft/yii2-apidoc": "2.*",
+    "yiisoft/yii2-codeception": "2.*",
+    "yiisoft/yii2-coding-standards": "2.*",
+    "yiisoft/yii2-debug": "2.*",
+    "yiisoft/yii2-faker": "2.*",
+    "yiisoft/yii2-gii": "2.*",
     "yiisoft/yii2-codeception": "*",
     "yiisoft/yii2-debug": "*",
     "yiisoft/yii2-gii": "*",
