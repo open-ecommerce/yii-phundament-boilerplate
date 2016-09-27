@@ -46,21 +46,8 @@ Yii::$app->view->params['pageButtons'] = Html::a('<span class="glyphicon glyphic
     
     <?php \yii\widgets\Pjax::begin(['id'=>'pjax-main', 'enableReplaceState'=> false, 'linkSelector'=>'#pjax-main ul.pagination a, th a', 'clientOptions' => ['pjax:success'=>'function(){alert("yo")}']]) ?>
 
-    <h1>
-        <?= Yii::t('models', 'Sakila Films') ?>        <small>
-            List
-        </small>
-    </h1>
     <div class="clearfix crud-navigation">
-<?php
-if(\Yii::$app->user->can('app_sakila-film_create', ['route' => true])){
-?>
-        <div class="pull-left">
-            <?= Html::a('<span class="glyphicon glyphicon-plus"></span> ' . Yii::t('cruds', 'New'), ['create'], ['class' => 'btn btn-success']) ?>
-        </div>
-<?php
-}
-?>
+
         <div class="pull-right">
 
                                                                                                                                                                                                                             

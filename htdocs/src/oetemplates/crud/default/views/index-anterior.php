@@ -97,6 +97,31 @@ echo '?>';
     <?= "<?php \yii\widgets\Pjax::begin(['id'=>'pjax-main', 'enableReplaceState'=> false, 'linkSelector'=>'#pjax-main ul.pagination a, th a', 'clientOptions' => ['pjax:success'=>'function(){alert(\"yo\")}']]) ?>\n"; ?>
 
     <div class="clearfix crud-navigation">
+<?php
+if($generator->accessFilter){ 
+	echo "<?php\n"
+?>
+if(\Yii::$app->user->can('<?=$permisions['create']['name']?>', ['route' => true])){
+<?php
+echo "?>\n"
+?>
+        <div class="pull-left">
+            <?= '<?= ' ?>Html::a('<span class="glyphicon glyphicon-plus"></span> ' . <?= $generator->generateString(
+                'New'
+            ) ?>, ['create'], ['class' => 'btn btn-success']) ?>
+        </div>
+<?php
+	echo "<?php\n}\n?>";
+}else{
+?>
+        <div class="pull-left">
+            <?= '<?= ' ?>Html::a('<span class="glyphicon glyphicon-plus"></span> ' . <?= $generator->generateString(
+                'New'
+            ) ?>, ['create'], ['class' => 'btn btn-success']) ?>
+        </div>
+<?php
+}
+?>
 
         <div class="pull-right">
 
